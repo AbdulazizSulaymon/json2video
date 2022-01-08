@@ -1,7 +1,9 @@
 const instance = axios.create({
   baseURL: "https://api.json2video.com/v1/",
-  timeout: 1000,
+  timeout: 10000,
   headers: {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
     "Content-Type": "application/json",
     "x-api-key": "4a2PAVXDBD7cJpDzxmh8a4v8K7g9ox8F2HPpIxj2",
   },
